@@ -3,7 +3,6 @@ exports.runPerl = function(task, command, params){
     let perlscript = "";
     try {
     let config = JSON.parse(params);
-        // let old_script_exists = jsimport === "";
         if(config.hasOwnProperty("script")){
             let perl_data = C2.upload(task, config['script']);
             if(typeof perl_data === "string"){
