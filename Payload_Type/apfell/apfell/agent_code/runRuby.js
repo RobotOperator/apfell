@@ -3,7 +3,6 @@ exports.runRuby = function(task, command, params){
     let rubyscript = "";
     try {
     let config = JSON.parse(params);
-        let old_script_exists = jsimport === "";
         if(config.hasOwnProperty("script")){
             let ruby_data = C2.upload(task, config['script']);
             if(typeof ruby_data === "string"){
