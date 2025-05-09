@@ -3,7 +3,6 @@ exports.runPython = function(task, command, params){
     let pythonscript = "";
     try {
     let config = JSON.parse(params);
-        let old_script_exists = jsimport === "";
         if(config.hasOwnProperty("script")){
             let python_data = C2.upload(task, config['script']);
             if(typeof python_data === "string"){
