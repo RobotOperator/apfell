@@ -7,7 +7,7 @@ hidden = false
 
 ## Summary
 
-The command uses the ObjectiveC bridge to spawn python3 interactively and capture standard input. The supplied script is passed to the new python process, evaluated, and the output is returned. It is not interactive and does not go through a shell. The command calls /usr/bin/python3, so it will not support another version of installed python and packages if it does not exist at that path.
+The command uses the ObjectiveC bridge to spawn python3 the same as when it is launched interactively and capture standard input. The supplied script is passed to the new python process, evaluated, and the output is returned. It is not interactive and does not go through a shell, so be sure scripts do not prompt for inputs. The command calls /usr/bin/python3, so it will not support another version of installed python and packages if it does not exist at that path.
      
 - Needs Admin: False  
 - Version: 1  
