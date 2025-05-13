@@ -34,7 +34,7 @@ class RunCommand(CommandBase):
     cmd = "run_perl"
     needs_admin = False
     help_cmd = "run_perl"
-    description = "The command uses the ObjectiveC bridge to spawn perl interactively and capture standard input. The supplied script is passed to the new perl process, evaluated, and the output is returned."
+    description = "The command uses the ObjectiveC bridge to spawn perl and capture standard input. The supplied script is passed to the new perl process, evaluated, and the output is returned."
     version = 1
     supported_ui_features = ["file_browser:upload"]
     author = "@robot"
