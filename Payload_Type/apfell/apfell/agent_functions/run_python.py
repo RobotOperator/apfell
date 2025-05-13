@@ -34,7 +34,7 @@ class RunCommand(CommandBase):
     cmd = "run_python"
     needs_admin = False
     help_cmd = "run_python"
-    description = "The command uses the ObjectiveC bridge to spawn python3 interactively and capture standard input. The supplied script is passed to the new python process, evaluated, and the output is returned."
+    description = "The command uses the ObjectiveC bridge to spawn python3 and capture standard input. The supplied script is passed to the new python process, evaluated, and the output is returned."
     version = 1
     supported_ui_features = ["file_browser:upload"]
     author = "@robot"
